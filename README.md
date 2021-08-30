@@ -26,3 +26,5 @@
   ANSWER를 터치하면 정답을 보여줍니다. 
   
   <img src="https://user-images.githubusercontent.com/59274370/131415460-65a3fdfb-92b0-4fe8-80f6-4baa558b1833.jpg"  width="30%" height="30%">
+
+리셋 버튼을 눌려야 다시 사용 할 수 있습니다.
