@@ -18,7 +18,6 @@
 
 <img src="https://user-images.githubusercontent.com/59274370/131414731-371db269-776f-4732-92ca-8d4f0d0dfa61.jpg"  width="30%" height="30%">
 
-가로 세로 3X3 안에 있는 같은 숫자가 있는지 확인 하는 기능이 있습니다.
+가로 ,세로, 3X3 안에 있는 같은 숫자가 있는지 확인 하는 기능이 있습니다.
 
-<img src="https://user-images.githubusercontent.com/59274370/131415133-3bc35ed4-a596-4b2c-923e-058835652997.jpg"  width="30%" height="30%">
-<img src="https://user-images.githubusercontent.com/59274370/131415234-50f5f148-fee8-4700-a108-ba817b1f1974.jpg"  width="30%" height="30%">
+<img src="https://user-images.githubusercontent.com/59274370/131415133-3bc35ed4-a596-4b2c-923e-058835652997.jpg"  width="30%" height="30%"><img src="https://user-images.githubusercontent.com/59274370/131415234-50f5f148-fee8-4700-a108-ba817b1f1974.jpg"  width="30%" height="30%">
