@@ -133,7 +133,8 @@ public class MainActivity extends AppCompatActivity {
 
                         touchX=before%9;
                         touchY=((8-touchX)+before)/10;
-                        grid[touchX][touchY]=INDEX+1;
+
+                        grid[touchY][touchX]=INDEX+1;
                         System.out.println(touchX+" "+touchY);
                         System.out.println(grid[touchX][touchY]);
 
@@ -181,7 +182,7 @@ public class MainActivity extends AppCompatActivity {
                         button[i].setBackgroundColor(Color.WHITE);
                         a=i%9;
                         b=((8-a)+i)/10;
-                        button[i].setText(grid[a][b]+"");
+                        button[i].setText(grid[b][a]+"");
                     }
 
                 }
