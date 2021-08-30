@@ -4,4 +4,7 @@
 
 안드로이드 7 버전으로 개발을 하였습니다.
 
-![Screenshot_20210830-211406](https://user-images.githubusercontent.com/59274370/131413552-92bc4840-0d9f-4ef1-8a87-583efffabf16.jpg)
+![Screenshot_20210830-211406](https://user-images.githubusercontent.com/59274370/131413552-92bc4840-0d9f-4ef1-8a87-583efffabf16.jpg){: width="100" height="100"}
+실행 화면 입니다.
+
+원하는 버튼을 클릭하면 버튼의 검정색으로 바뀝니다.
