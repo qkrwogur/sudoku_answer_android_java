@@ -1134,9 +1134,13 @@
       app:layout_constraintTop_toBottomOf="@+id/a_9"
       app:layout_constraintLeft_toLeftOf="parent"
       app:layout_constraintRight_toLeftOf="@+id/two"
-      android:layout_marginTop="10dp"
+      android:layout_marginTop="20dp"
+      android:layout_marginRight="5dp"
       android:text="1"
       android:textSize="20dp"
+
+      android:background="#000000"
+      android:textColor="#ffffff"
       />
   <Button
       android:id="@+id/two"
@@ -1145,9 +1149,13 @@
       app:layout_constraintTop_toBottomOf="@+id/a_9"
       app:layout_constraintLeft_toRightOf="@+id/one"
       app:layout_constraintRight_toLeftOf="@+id/three"
-      android:layout_marginTop="10dp"
+      android:layout_marginTop="20dp"
+      android:layout_marginRight="5dp"
       android:text="2"
       android:textSize="20dp"
+
+      android:background="#000000"
+      android:textColor="#ffffff"
       />
   <Button
       android:id="@+id/three"
@@ -1156,9 +1164,13 @@
       app:layout_constraintTop_toBottomOf="@+id/a_9"
       app:layout_constraintLeft_toRightOf="@+id/two"
       app:layout_constraintRight_toLeftOf="@+id/four"
-      android:layout_marginTop="10dp"
+      android:layout_marginTop="20dp"
+      android:layout_marginRight="5dp"
       android:text="3"
       android:textSize="20dp"
+
+      android:background="#000000"
+      android:textColor="#ffffff"
       />
   <Button
       android:id="@+id/four"
@@ -1167,9 +1179,13 @@
       app:layout_constraintTop_toBottomOf="@+id/a_9"
       app:layout_constraintLeft_toRightOf="@+id/three"
       app:layout_constraintRight_toLeftOf="@+id/five"
-      android:layout_marginTop="10dp"
+      android:layout_marginTop="20dp"
+      android:layout_marginRight="5dp"
       android:text="4"
       android:textSize="20dp"
+
+      android:background="#000000"
+      android:textColor="#ffffff"
       />
   <Button
       android:id="@+id/five"
@@ -1178,9 +1194,12 @@
       app:layout_constraintTop_toBottomOf="@+id/a_9"
       app:layout_constraintLeft_toRightOf="@+id/four"
       app:layout_constraintRight_toRightOf="parent"
-      android:layout_marginTop="10dp"
+      android:layout_marginTop="20dp"
       android:text="5"
       android:textSize="20dp"
+
+      android:background="#000000"
+      android:textColor="#ffffff"
       />
 
   <Button
@@ -1188,50 +1207,70 @@
       android:layout_width="0dp"
       android:layout_height="wrap_content"
       app:layout_constraintTop_toBottomOf="@+id/one"
-      app:layout_constraintLeft_toLeftOf="parent"
-      app:layout_constraintRight_toLeftOf="@+id/seven"
+      app:layout_constraintLeft_toLeftOf="@+id/one"
+      app:layout_constraintRight_toRightOf="@+id/one"
       android:text="6"
       android:textSize="20dp"
+
+      android:layout_marginTop="5dp"
+      android:background="#000000"
+      android:textColor="#ffffff"
       />
   <Button
       android:id="@+id/seven"
       android:layout_width="0dp"
       android:layout_height="wrap_content"
-      app:layout_constraintTop_toBottomOf="@+id/one"
-      app:layout_constraintLeft_toRightOf="@+id/six"
-      app:layout_constraintRight_toLeftOf="@+id/eight"
+      app:layout_constraintTop_toBottomOf="@+id/two"
+      app:layout_constraintLeft_toLeftOf="@+id/two"
+      app:layout_constraintRight_toRightOf="@+id/two"
       android:text="7"
       android:textSize="20dp"
+
+      android:layout_marginTop="5dp"
+      android:background="#000000"
+      android:textColor="#ffffff"
       />
   <Button
       android:id="@+id/eight"
       android:layout_width="0dp"
       android:layout_height="wrap_content"
-      app:layout_constraintTop_toBottomOf="@+id/one"
-      app:layout_constraintLeft_toRightOf="@+id/seven"
-      app:layout_constraintRight_toLeftOf="@+id/nine"
+      app:layout_constraintTop_toBottomOf="@+id/three"
+      app:layout_constraintLeft_toLeftOf="@+id/three"
+      app:layout_constraintRight_toRightOf="@+id/three"
       android:text="8"
       android:textSize="20dp"
+
+      android:layout_marginTop="5dp"
+      android:background="#000000"
+      android:textColor="#ffffff"
       />
   <Button
       android:id="@+id/nine"
       android:layout_width="0dp"
       android:layout_height="wrap_content"
-      app:layout_constraintTop_toBottomOf="@+id/one"
-      app:layout_constraintLeft_toRightOf="@+id/three"
-      app:layout_constraintRight_toLeftOf="@+id/five"
+      app:layout_constraintTop_toBottomOf="@+id/four"
+      app:layout_constraintLeft_toLeftOf="@+id/four"
+      app:layout_constraintRight_toRightOf="@+id/four"
       android:text="9"
       android:textSize="20dp"
+
+      android:layout_marginTop="5dp"
+      android:background="#000000"
+      android:textColor="#ffffff"
       />
   <Button
       android:id="@+id/cancel"
       android:layout_width="0dp"
       android:layout_height="wrap_content"
-      app:layout_constraintTop_toBottomOf="@+id/one"
-      app:layout_constraintLeft_toRightOf="@+id/four"
-      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/five"
+      app:layout_constraintLeft_toLeftOf="@+id/five"
+      app:layout_constraintRight_toRightOf="@+id/five"
       android:text="X"
       android:textSize="20dp"
+
+      android:layout_marginTop="5dp"
+      android:background="#000000"
+      android:textColor="#ffffff"
       />
 
   <Button
@@ -1244,6 +1283,11 @@
       app:layout_constraintRight_toLeftOf="@+id/answer"
       android:text="reset"
       android:textSize="20dp"
+
+      android:layout_marginRight="5dp"
+
+      android:background="#000000"
+      android:textColor="#ffffff"
       />
   <Button
       android:id="@+id/answer"
@@ -1255,6 +1299,9 @@
       app:layout_constraintLeft_toRightOf="@+id/reset"
       android:text="answer"
       android:textSize="20dp"
+
+      android:background="#000000"
+      android:textColor="#ffffff"
     />
 
 
