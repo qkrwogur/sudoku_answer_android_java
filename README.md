@@ -4,3 +4,4 @@
 
 안드로이드 7 버전으로 개발을 하였습니다.
 
+![Screenshot_20210830-211406](https://user-images.githubusercontent.com/59274370/131413552-92bc4840-0d9f-4ef1-8a87-583efffabf16.jpg)
