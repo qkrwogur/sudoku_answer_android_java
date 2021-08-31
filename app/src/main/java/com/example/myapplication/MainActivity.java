@@ -100,16 +100,8 @@ public class MainActivity extends AppCompatActivity {
                         button[before].setBackgroundColor(Color.WHITE);
                     }
                     before=INDEX;
-                    button[INDEX].setBackgroundColor(Color.BLACK);
+                    button[INDEX].setBackgroundColor(Color.GRAY);
 
-                    /*
-                    touchX=INDEX%9;
-                    touchY=((8-touchX)+INDEX)/10;
-
-                    String X = Integer.toString(touchX);
-                    String Y = Integer.toString(touchY);
-                    Toast.makeText(getApplicationContext(), X+" "+Y, Toast.LENGTH_LONG).show();
-                    */
 
                 }
             });
@@ -128,7 +120,7 @@ public class MainActivity extends AppCompatActivity {
                         return;
                     }
                     if(before!=100){
-                        button[before].setBackgroundColor(Color.WHITE);
+
                         button[before].setText(INDEX+1+"");
 
                         touchX=before%9;
