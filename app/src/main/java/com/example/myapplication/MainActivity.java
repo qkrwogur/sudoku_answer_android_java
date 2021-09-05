@@ -121,6 +121,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                     if(before!=100){
 
+                        button[before].setTextColor(Color.parseColor("#ff0000"));
                         button[before].setText(INDEX+1+"");
 
                         touchX=before%9;
@@ -143,6 +144,7 @@ public class MainActivity extends AppCompatActivity {
                 for(int i=0;i<81;i++){
                     button[i].setBackgroundColor(Color.WHITE);
                     button[i].setText("");
+                    button[i].setTextColor(Color.parseColor("#000000"));
                 }
 
                 flag=0;
@@ -153,6 +155,7 @@ public class MainActivity extends AppCompatActivity {
                     {
                         grid[a][b]=0;
                         System.out.print( grid[b][a]);
+
                     }
                     System.out.println();
                 }
@@ -175,6 +178,7 @@ public class MainActivity extends AppCompatActivity {
                         a=i%9;
                         b=((8-a)+i)/10;
                         button[i].setText(grid[b][a]+"");
+
                     }
 
                 }
@@ -190,14 +194,10 @@ public class MainActivity extends AppCompatActivity {
                     return;
                 }
                 if(before!=100){
-                    button[before].setBackgroundColor(Color.WHITE);
                     button[before].setText("");
-
                     touchX=before%9;
                     touchY=((8-touchX)+before)/10;
                     grid[touchX][touchY]=0;
-                    System.out.println(touchX+" "+touchY);
-                    System.out.println(grid[touchX][touchY]);
 
                 }
             }
