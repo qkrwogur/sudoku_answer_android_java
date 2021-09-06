@@ -195,9 +195,11 @@ public class MainActivity extends AppCompatActivity {
                 }
                 if(before!=100){
                     button[before].setText("");
+                    button[before].setTextColor(Color.parseColor("#000000"));
                     touchX=before%9;
                     touchY=((8-touchX)+before)/10;
-                    grid[touchX][touchY]=0;
+                    grid[touchY][touchX]=0;
+
 
                 }
             }
