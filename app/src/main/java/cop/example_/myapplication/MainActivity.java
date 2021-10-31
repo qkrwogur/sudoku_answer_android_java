@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package cop.example_.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,11 +8,15 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.example.myapplication.R;
+
 public class MainActivity extends AppCompatActivity {
     int before = 100;//이전버튼을 누룬 것의 저장징소
     int touchX,touchY;
     int flag=0;
 
+    int[] fistWrong = new int[]{0,0};
+    int[] secondWrong = new int[]{0,0};
     int checkInt=0;
     int[][] grid= new int[][]
             {
@@ -64,6 +68,7 @@ public class MainActivity extends AppCompatActivity {
     Button Reset,Answer,Cancel;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -87,6 +92,8 @@ public class MainActivity extends AppCompatActivity {
         for(int i=0; i<button.length; i++){
             final int INDEX;
             INDEX = i;
+
+
 
             button[INDEX].setOnClickListener(new View.OnClickListener() {
 
@@ -166,6 +173,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 int a,b;
+                int wrong1;
+                int wrong2;
                 if(flag==1){
                     Toast.makeText(getApplicationContext(), "리셋 후 사용해 주세요.", Toast.LENGTH_LONG).show();
                     return;
@@ -181,6 +190,12 @@ public class MainActivity extends AppCompatActivity {
 
                     }
 
+                }else{
+                    wrong1=(9*fistWrong[1])+fistWrong[0];
+                    wrong2=(9*secondWrong[1])+secondWrong[0];
+                    button[wrong1].setTextColor(Color.BLUE);
+                    button[wrong2].setTextColor(Color.BLUE);
+                    System.out.println("여가 왔다");
                 }
 
             }
@@ -256,6 +271,8 @@ public class MainActivity extends AppCompatActivity {
                     break;
             }
             if (grid[y][i] == n){
+                secondWrong[0]=i;
+                secondWrong[1]=y;
 
                 return false;
             }
@@ -269,6 +286,8 @@ public class MainActivity extends AppCompatActivity {
                     break;
             }
             if (grid[i][x] == n){
+                secondWrong[0]=x;
+                secondWrong[1]=i;
 
                 return false;
             }
@@ -292,7 +311,8 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
                 if (grid[y0 + i][x0 + j] == n){
-
+                    secondWrong[0]=x0 + j;
+                    secondWrong[1]=y0 + i;
                     return false;
                 }
             }
@@ -314,7 +334,10 @@ public class MainActivity extends AppCompatActivity {
                         System.out.println("성공");
 
                     }else{
-                        Toast.makeText(getApplicationContext(), "잘못된 입력이 있습니다.", Toast.LENGTH_LONG).show();
+                        System.out.println(b+" "+a);
+                        fistWrong[0] = b;
+                        fistWrong[1] = a;
+                        Toast.makeText(getApplicationContext(), "파란색 숫자가 잘못된 입력이 있습니다.", Toast.LENGTH_LONG).show();
                         return false;
                     }
                 }

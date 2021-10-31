@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package con.example_.myapplication;
 
 import org.junit.Test;
 
