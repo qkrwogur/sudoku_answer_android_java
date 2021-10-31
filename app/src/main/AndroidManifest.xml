@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name="cop.example_.myapplication.MainActivity"
+        <activity android:name="co.example_.myapplication.MainActivity"
             android:screenOrientation="portrait">
 
             <intent-filter>

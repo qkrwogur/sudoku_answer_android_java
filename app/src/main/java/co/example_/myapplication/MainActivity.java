@@ -1,4 +1,4 @@
-package cop.example_.myapplication;
+package co.example_.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
